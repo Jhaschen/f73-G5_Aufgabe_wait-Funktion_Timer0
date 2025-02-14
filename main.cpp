@@ -67,7 +67,7 @@ static void WaitTimer0_x_ms(uint16_t x_ms)
 	uint16_t OVcnt = 0;
 	// Wir warten x Überlaufe des Timer0 ab.
 	// 1 Zählschritt tSTEP => 64x62.5ns=4us
-	// 1 Überlauf => 256x4us=1.024ms
+	// 1 Überlauf => 256x4us=1.024ms => 1024us
 	// tOVF = 1ms
 
 	for (OVcnt = 0; OVcnt < x_ms; OVcnt++)
